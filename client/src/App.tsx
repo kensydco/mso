@@ -11,6 +11,7 @@ import BrandDetail from "./pages/BrandDetail";
 import News from "./pages/News";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
+import AccessDenied from "./pages/AccessDenied";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/careers" component={Careers} />
       <Route path="/careers/:id" component={Careers} />
       <Route path="/contact" component={Contact} />
+      <Route path="/access-denied" component={AccessDenied} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
