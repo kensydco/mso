@@ -206,31 +206,6 @@ export const brands: Brand[] = [
     },
   },
   {
-    slug: 'counsel-by-kensyd',
-    name: 'Counsel by Kensyd',
-    tagline: 'AI Legal Operations Platform',
-    category: 'marketplace',
-    status: 'active',
-    logo: '/logos/counsel-by-kensyd.svg',
-    colors: {
-      primary: '#B8FF4A',
-      secondary: '#0A0A0A',
-      accent: '#EAFDD0',
-    },
-    description: 'Counsel by Kensyd is an AI legal operations platform built to help modern law firms stay ahead with daily intelligence briefings, urgent alerts, and automated intake and triage workflows.',
-    services: [
-      'Daily Intelligence Briefings',
-      'Urgent SMS Alerts',
-      'Automated Intake & Triage',
-      'Deadline Monitoring',
-      'Lead Prioritization',
-      'Slack, Telegram & Email Delivery',
-    ],
-    contact: {
-      website: 'https://legal-site-o32.pages.dev/',
-    },
-  },
-  {
     slug: 'campusfam',
     name: 'CampusFam',
     tagline: 'Connecting Campus Communities',
