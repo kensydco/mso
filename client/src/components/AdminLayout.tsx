@@ -35,7 +35,7 @@ import {
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/useAuth';
-import { useMobile } from '@/hooks/useMobile';
+import { useIsMobile } from '@/hooks/useMobile';
 import DashboardLayoutSkeleton from './DashboardLayoutSkeleton';
 
 const NAV_ITEMS = [
@@ -173,7 +173,7 @@ function AdminSidebarContent({ children, setSidebarWidth }: AdminSidebarContentP
   const isCollapsed = state === 'collapsed';
   const [isDragging, setIsDragging] = useState(false);
   const sidebarRef = useRef<HTMLDivElement>(null);
-  const isMobile = useMobile();
+  const isMobile = useIsMobile();
 
   const activeItem =
     NAV_ITEMS.find(
