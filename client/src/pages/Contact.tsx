@@ -218,19 +218,6 @@ export default function Contact() {
                         </>
                       )}
                     </Button>
-
-                    <p className="text-xs text-[#64748B] leading-relaxed">
-                      By providing your phone number and submitting this form, you agree to receive SMS communications from Kensyd Companies.
-                      {' '}
-                      <a
-                        href="https://legal-site-o32.pages.dev/terms-of-service#communications-and-consent"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[#2563EB] hover:text-[#1D4ED8] underline underline-offset-2"
-                      >
-                        Review our Terms of Service Communications and Consent section.
-                      </a>
-                    </p>
                   </form>
                 )}
               </div>

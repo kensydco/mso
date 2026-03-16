@@ -201,19 +201,6 @@ export function ContactForm() {
         >
           {status === 'submitting' ? 'SENDING...' : 'SEND MESSAGE'}
         </Button>
-
-        <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed">
-          By providing your phone number and submitting this form, you agree to receive SMS communications from Kensyd Companies.
-          {' '}
-          <a
-            href="https://legal-site-o32.pages.dev/terms-of-service#communications-and-consent"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--color-secondary)] underline underline-offset-2 hover:opacity-80 transition-opacity"
-          >
-            Review the Communications and Consent section of our Terms of Service.
-          </a>
-        </p>
       </div>
     </form>
   );
