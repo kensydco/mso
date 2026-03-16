@@ -1,12 +1,14 @@
 import type { NextConfig } from 'next';
+import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare';
 
 const nextConfig: NextConfig = {
-  output: 'export',
   images: {
     unoptimized: true,
   },
   // Remove trailing slashes from URLs
   trailingSlash: false,
 };
+
+initOpenNextCloudflareForDev();
 
 export default nextConfig;
