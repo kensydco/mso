@@ -44,8 +44,69 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative py-32 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative py-32 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white overflow-hidden">
+        {/* Dot grid background */}
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+
+        {/* About graphic: corporate building with portfolio network */}
+        <div className="absolute right-0 inset-y-0 flex items-center pr-4 lg:pr-12 opacity-[0.12] pointer-events-none hidden md:flex" aria-hidden="true">
+          <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* Main building / HQ */}
+            <rect x="110" y="75" width="100" height="185" stroke="white" strokeWidth="2" fill="none"/>
+            {/* Roof */}
+            <polygon points="110,75 160,35 210,75" stroke="white" strokeWidth="2" fill="none"/>
+            {/* Door */}
+            <rect x="138" y="210" width="44" height="50" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
+            {/* Windows row 1 */}
+            <rect x="125" y="95" width="22" height="22" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
+            <rect x="173" y="95" width="22" height="22" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
+            {/* Windows row 2 */}
+            <rect x="125" y="133" width="22" height="22" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
+            <rect x="173" y="133" width="22" height="22" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
+            {/* Windows row 3 */}
+            <rect x="125" y="171" width="22" height="22" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
+            <rect x="173" y="171" width="22" height="22" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
+            {/* Portfolio brand nodes */}
+            <circle cx="42" cy="120" r="18" stroke="white" strokeWidth="1.5" fill="none"/>
+            <line x1="60" y1="120" x2="110" y2="130" stroke="white" strokeWidth="1.5" strokeDasharray="5 3"/>
+            <circle cx="278" cy="120" r="18" stroke="white" strokeWidth="1.5" fill="none"/>
+            <line x1="210" y1="130" x2="260" y2="120" stroke="white" strokeWidth="1.5" strokeDasharray="5 3"/>
+            <circle cx="42" cy="220" r="14" stroke="white" strokeWidth="1.5" fill="none"/>
+            <line x1="110" y1="230" x2="56" y2="224" stroke="white" strokeWidth="1.5" strokeDasharray="5 3"/>
+            <circle cx="278" cy="220" r="14" stroke="white" strokeWidth="1.5" fill="none"/>
+            <line x1="210" y1="230" x2="264" y2="224" stroke="white" strokeWidth="1.5" strokeDasharray="5 3"/>
+            <circle cx="160" cy="308" r="14" stroke="white" strokeWidth="1.5" fill="none"/>
+            <line x1="160" y1="260" x2="160" y2="294" stroke="white" strokeWidth="1.5" strokeDasharray="5 3"/>
+            {/* Small dots inside nodes */}
+            <circle cx="42" cy="120" r="4" fill="white" fillOpacity="0.6"/>
+            <circle cx="278" cy="120" r="4" fill="white" fillOpacity="0.6"/>
+            <circle cx="42" cy="220" r="4" fill="white" fillOpacity="0.6"/>
+            <circle cx="278" cy="220" r="4" fill="white" fillOpacity="0.6"/>
+            <circle cx="160" cy="308" r="4" fill="white" fillOpacity="0.6"/>
+          </svg>
+        </div>
+
+        {/* Left accent */}
+        <div className="absolute left-0 inset-y-0 flex items-center pl-4 lg:pl-12 opacity-[0.07] pointer-events-none hidden lg:flex" aria-hidden="true">
+          <svg width="160" height="280" viewBox="0 0 160 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="80" cy="50" r="20" stroke="white" strokeWidth="1.5" fill="none"/>
+            <line x1="80" y1="70" x2="80" y2="100" stroke="white" strokeWidth="1.5"/>
+            <line x1="80" y1="100" x2="30" y2="140" stroke="white" strokeWidth="1.5"/>
+            <line x1="80" y1="100" x2="130" y2="140" stroke="white" strokeWidth="1.5"/>
+            <circle cx="30" cy="155" r="15" stroke="white" strokeWidth="1.5" fill="none"/>
+            <circle cx="130" cy="155" r="15" stroke="white" strokeWidth="1.5" fill="none"/>
+            <line x1="30" y1="170" x2="20" y2="210" stroke="white" strokeWidth="1.5"/>
+            <line x1="30" y1="170" x2="60" y2="210" stroke="white" strokeWidth="1.5"/>
+            <line x1="130" y1="170" x2="100" y2="210" stroke="white" strokeWidth="1.5"/>
+            <line x1="130" y1="170" x2="140" y2="210" stroke="white" strokeWidth="1.5"/>
+            <circle cx="20" cy="220" r="10" stroke="white" strokeWidth="1.5" fill="none"/>
+            <circle cx="60" cy="220" r="10" stroke="white" strokeWidth="1.5" fill="none"/>
+            <circle cx="100" cy="220" r="10" stroke="white" strokeWidth="1.5" fill="none"/>
+            <circle cx="140" cy="220" r="10" stroke="white" strokeWidth="1.5" fill="none"/>
+          </svg>
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">About Kensyd Companies</h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
             Building a portfolio of exceptional brands through operational excellence and strategic support.
